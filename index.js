@@ -45,7 +45,7 @@ app.get('/',(req,res)=>{
     res.send("server started");
 
 })
-app.post("/register", async(req,res)=>{
+app.post("/", async(req,res)=>{
     try {
         const { name, email, contact,coment } = req.body;
         const user = new User({ name, email, contact,coment });
