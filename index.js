@@ -4,7 +4,7 @@ const app=express();
 app.use(express.json());
 const port=process.env.PORT||5000;
 const mongoose=require('mongoose');
-const URL="mongodb+srv://prem:premdarji1903@cluster0.kpqhq6d.mongodb.net/mydb?retryWrites=true&w=majority"
+const URL="mongodb+srv://prem:premdarji1903@cluster0.kpqhq6d.mongodb.net/mydb?retryWrites=true&w=majorityL";
 mongoose.connect(URL,{
 useNewUrlParser:true,
 useUnifiedTopology:true
